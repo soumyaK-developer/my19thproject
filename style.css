@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+#myBtn {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: chocolate;
+    color: aliceblue;
+    border: none;
+    font-weight: 700;
+}
+#myBtn:hover {
+    background-color: chartreuse;
+    color: darkslategray;
+}
+#myModal {
+    width: 70vw;
+    margin: auto;
+    position: fixed;
+    top: 20px;
+    right: 15%;
+    z-index: 10000;
+    display: none;
+}
+#modalHeader {
+    position: relative;
+    background-color: red;
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px 120px 14px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+#modalCont {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 1.2rem;
+    padding: 14px 120px 14px 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+}
+#modalFooter {
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 120px 14px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 14px 20px;
+    font-size: 2.4rem;
+    color: white;
+}
+.close:hover {
+    background-color: black;
+    color: red;
+}
