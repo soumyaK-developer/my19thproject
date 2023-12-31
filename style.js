@@ -17,10 +17,13 @@ document.getElementById("myBtn").onclick = function () {
         var div = document.getElementById("myModal")
         div.style.display = "none"
     }
-    // document.body.onclick =  function() {
-    //     var div = document.getElementById("myModal")
-    //     div.style.display = "none"
-    // }
+    window.onclick =  function(e) {
+        if(e.target.className === "modal") {
+            var div = document.getElementById("myModal")
+            div.style.display = "none"
+        }
+   
+    }
 }
 
 

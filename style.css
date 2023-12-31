@@ -8,7 +8,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
 }
 #myBtn {
     cursor: pointer;
@@ -25,16 +24,20 @@ body {
     color: darkslategray;
 }
 #myModal {
-    width: 70vw;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 110, 200, 0.397);
     margin: auto;
     position: fixed;
-    top: 20px;
-    right: 15%;
+    top: 0;
+    right: 0;
     z-index: 10000;
     display: none;
 }
 #modalHeader {
     position: relative;
+    width: 80vw;
+    margin: auto;
     background-color: red;
     color: white;
     font-size: 2.5rem;
@@ -42,6 +45,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 #modalCont {
+    width: 80vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -52,6 +57,8 @@ body {
     color: black;
 }
 #modalFooter {
+    width: 80vw;
+    margin: auto;
     background-color: red;
     color: white;
     font-size: 1rem;
